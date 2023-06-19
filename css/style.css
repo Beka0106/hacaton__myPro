@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500&family=Prompt:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .container{
+    max-width: 80%;
+    margin: 0 auto;
+} */
+
+section {
+  padding: 200px 0; /* Отступы сверху и снизу */
+  background-color: #f7f7f7; /* Цвет фона */
+}
+
+.container {
+  max-width: 80%; 
+  margin: 0 auto; 
+  perspective: 1000px;
+}
+
+/* .main__wrap {
+  transform-style: preserve-3d;
+  animation: rotateAnimation 10s infinite linear;
+}
+
+.main__img,
+.info {
+  transform: translateZ(100px);
+}
+
+@keyframes rotateAnimation {
+  0% {
+      transform: rotateX(0) rotateY(0);
+  }
+  50% {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+  100% {
+      transform: rotateX(0) rotateY(0);
+  }
+} */
+
+ul{
+    list-style: none;
+}
+
+/* section {
+    padding: 200px 0;
+    height: 1000px;
+} */
+
+header{
+    position: fixed;
+    width: 100%;
+    /* padding: 20px 0; */
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    /* position: relative; */
+    z-index: 100; /* Значение z-index для header */
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav img {
+    width: 100px;
+}
+
+.nav{
+    display: flex;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: rgb(107, 174, 229);
+    font-weight: bold;
+}
+
+
+
+/* 
+* main */ */
+* main */ */
+#main {
+  padding: 100px 0;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+}
+
+.main__wrap {
+  display: flex;
+  row-gap: 20px;
+}
+
+.main__img {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.main__img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+}
+
+.info {
+padding-left: 20px;
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.main__wrap p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.main__buttons button {
+  padding: 10px 20px;
+  transition: .3s;
+}
+
+.main__buttons button:hover {
+  opacity: 1;
+}
+
+
+/* categories section  */
+
+#categories-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* .container {
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+h2 {
+  font-size: 24px;
+  color: #0c0c0c;
+  margin-bottom: 10px;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-filter select,
+.category-filter input[type="text"],
+.category-filter button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.category-filter select {
+  margin-right: 10px;
+}
+
+.category-filter input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.category-filter button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.category-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.category-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.category-item p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.category-item .price {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.category-link img {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.category-link img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* categories section */
+
+
+
+/* секция аккордеон */
+#accordion {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  padding: 200px 0;
+    /* background-image: url('https://files.123freevectors.com/wp-content/original/108384-light-blue-curve.jpg');
+    height: 100vh;
+    background-size: cover; */
+  }
+  
+  #accordion h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .accordion-item {
+    flex-basis: calc(50% - 15px);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    font-size: 18px;
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .accordion-header:hover {
+    background-color: #2471a3;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 15px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .accordion-item.open .accordion-header {
+    background-color: #2471a3;
+  }
+  
+  .accordion-item.open .accordion-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .accordion-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  
+
+
+  /* Custom section - Реализуйте блок на ваш выбор и фантазию */
+
+  #custom-section {
+    padding: 100px 0;
+    background-color: #2c2121;
+    background-image: url('https://img.freepik.com/premium-vector/background-with-colorful-shopping-bags-vector-illustration-sale-discount-concept_653240-59.jpg');
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .custom-block {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-block::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle, #2980b9 0%, #fff 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .custom-block:hover::before {
+    opacity: 1;
+  }
+  
+  .custom-block h2 {
+    color: #0676f6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .custom-block p {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .custom-block.active {
+    background-color: #2980b9;
+    color: #fff;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-block.active::before {
+    background-image: radial-gradient(circle, #fff 0%, #2980b9 70%);
+  }
+  
+   /* Custom section - Реализуйте блок на ваш выбор и фантазию */
+
+
+
+
+
+/* 
+Favorite section - У вас будет слева 10 товаров, при нажатии
+на один из товаров, выбранный товар отрисуется справа */
+
+#favorite  {
+  background-color: #f2f2f2;
+}
+
+   .favorite-section {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    background-color: #f2f2f2 !important;
+    padding: 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* background-image: linear-gradient(to bottom right, #f8f8f8, #e2e2e2); */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .container .favorite-section {
+    background-color: rgb(58, 158, 58);
+  }
+
+  .favorite_section .products {
+    margin-left: auto; 
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+  
+  .product {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .selected-product {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+    margin-bottom: 20px;
+  }
+  
+  .selected-product h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .product img {
+    max-width: 280px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background-size: cover;
+  }
+
+  .selected-product img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+
+  /* 
+Favorite section - У вас будет слева 10 товаров, при нажатии
+на один из товаров, выбранный товар отрисуется справа */
+
+
+
+
+/* Contacts section  */
+
+
+
+
+
+.contacts-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+/* #map {
+  margin-bottom: 20px;
+  
+} */
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-details h2 {
+  margin-bottom: 20px;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-details img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contact-details span {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+/* Contacts section  */
+
+
+
+
+/* footer section */
+footer {
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+  color: rgb(155, 237, 255);
+  padding: 20px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  font-size: 24px;
+}
+
+.footer__icons a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer__icons a:hover {
+  color: #9448a5; 
+}
+/* footer section */
+
+#main {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+#address {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+#contacts {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+#about {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+#help {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+
+
+
+
+#swiper-section {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  
+}
+
+.swiper-slide img {
+  
+    max-width: 100%; /* Максимальная ширина изображения в пределах слайда */
+    max-height: 100%; /* Максимальная высота изображения в пределах слайда */
+    object-fit: contain; /* Масштабирование изображения, чтобы поместить его полностью внутрь слайда */
+  
+}
+
+/* .swiper-container {
+  width: 100%; 
+  height: 400px; 
+  margin: 0 auto; 
+} */
+
+
+
+.swiper-pagination {
+  position: absolute; /* Абсолютное позиционирование пагинации */
+  bottom: 10px; /* Расстояние от нижней границы контейнера слайдера */
+  left: 50%; /* Расположение пагинации в середине по горизонтали */
+  transform: translateX(-50%); /* Центрирование пагинации по горизонтали */
+}
+
+.swiper-pagination-bullet {
+  width: 10px; /* Ширина индикатора пагинации */
+  height: 10px; /* Высота индикатора пагинации */
+  background-color: #fff; /* Цвет индикатора пагинации */
+  opacity: 0.5; /* Прозрачность индикатора пагинации */
+  border-radius: 50%; /* Закругление индикатора пагинации */
+  margin: 0 5px; /* Расстояние между индикаторами пагинации */
+  cursor: pointer; /* Изменение курсора при наведении */
+  transition: opacity 0.3s ease; /* Плавный переход для эффекта активации */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Прозрачность активного индикатора пагинации */
+}
+
+.swiper-slide {
+  display: block;
+  text-align: center; /* Центрирование содержимого слайда по горизонтали */
+  width: 70%;
+  margin: -5px;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateX(-5px);
+  width: 33.33%
+}
+
+.swiper-container {
+  position: relative; /* Установка позиции контейнера слайдера */
+  z-index: 2; /* Значение z-index для контейнера слайдера */
+  margin: -5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Adjust this value to your desired small size */
+  max-height: 500px; /* Adjust this value to your desired small size */
+  object-fit: cover;
+}
+.swiper-wrapper {
+  display: flex;
+  width: 300%; /* Adjust this value based on the number of slides */
+}

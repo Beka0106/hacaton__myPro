@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bektur</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-********" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/Rasengan.webp"/>
+    
+</head>
+<body>
+
+
+	
+    <header>
+        <div class="container">
+            <div class="header__nav">
+                <img src="./img/leaves-wall-art-botanical-line-art-with-blue-abstract-shapes-minimalist-style-natural-concept-png.webp" alt="">
+                <ul class="nav">
+                    <li>
+                        <a href="#main">Main</a>
+                    </li>
+                    <li>
+                        <a href="#address">Address</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+                <div class="mobile-btn">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </header>
+
+
+
+
+
+    <!-- modalka -->
+  <section id="main">
+    <div class="container main__container">
+
+        <div class="main__wrap">
+
+          <div class="main__img">
+            <img src="./img/online-shopping-ecommerce-ss-1920_1.png" alt="">
+          </div>
+
+          <div class="info">
+            <h1>"Trust Your Shopping <br> to the Best Online Store!"</h1>
+            <p>Click below for feedback!</p>
+            <div class="main__buttons">
+                <button class="apply">Apply</button>
+                <button class="check">Check</button>
+                <button class="cancel">cancel setTimeOut</button>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class="modalBackDrop">
+    <div class="modal">
+        <div class="modalHeader">
+            <h2>"Shop with Ease, Shop with Us!"</h2>
+            <p class="modalCloseButton">X</p>
+        </div>
+        <div class="modalContent form">
+            <form>
+                <input placeholder="name" type="text" id="messageOne">
+                <input placeholder="number" type="text" id="messageTwo">
+                <button type="submit" class="modalApplyButton">APPLY</button>
+            </form>
+            
+        </div>
+        <div class="message"></div>
+    </div>
+</div>
+<!--modalka -->
+
+<!-- 
+swiper section -->
+<!-- <section id="swiper2">
+        <div class="container">
+
+            <h2>Swiper-2</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Let's go!</div>
+                  <div class="swiper-slide">2</div>
+                  <div class="swiper-slide">3</div>
+                  <div class="swiper-slide">4</div>
+                  <div class="swiper-slide">5</div>
+                  <div class="swiper-slide">6</div>
+                  <div class="swiper-slide">7</div>
+                  <div class="swiper-slide">8</div>
+                  <div class="swiper-slide">9</div>
+                  <div class="swiper-slide">10</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+
+        </div> -->
+    </section>
+<!--     
+swiper section -->
+
+
+
+
+
+
+
+    
+
+    <!-- аккордеон --> 
+    <section id="accordion">
+        <div class="container">
+          <h2>Our products</h2>
+          <div class="accordion-container">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">Accordion Item 1</h3>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel fermentum nisi, ut ultrices turpis.</p>
+              
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">Accordion Item 2</h3>
+              <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel fermentum nisi, ut ultrices turpis.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">Accordion Item 3</h3>
+              <div class="accordion-content">
+                <p>Nulla faucibus justo sed ultrices fermentum. Aliquam accumsan tincidunt nibh, et aliquam dolor venenatis nec.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">Accordion Item 4</h3>
+              <div class="accordion-content">
+                <p>Suspendisse potenti. Vestibulum vel pulvinar ligula, id hendrerit orci. Vivamus quis eros sed turpis aliquet tempus.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- categories section -->
+
+<section id="categories-section">
+  <div class="container">
+
+    <h2>Categories</h2>
+
+    <div class="category-filter">
+
+      <select id="category-select">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+      <input type="text" id="search-input" placeholder="Search">
+      <button id="search-button">Search</button>
+
+    </div>
+
+    <div class="category-list">
+
+      <div class="category-item" data-category="electronics" data-name="Product 1">
+        <a href="#" class="category-link">
+          <img src="https://www.pngall.com/wp-content/uploads/1/Electronic.png" alt="Electronics">
+          Electronics
+        </a>
+      </div>
+
+      <div class="category-item" data-category="clothing" data-name="Product 2">
+        <a href="#" class="category-link">
+          <img src="https://cdn.shoplightspeed.com/shops/649705/files/52416016/1652x1652x2/picture-organic-clothing-picture-elfyn-jkt.jpg" alt="Clothing">
+          Clothing
+        </a>
+      </div>
+
+      <div class="category-item" data-category="books" data-name="Product 3">
+        <a href="#" class="category-link">
+          <img src="https://www.pngall.com/wp-content/uploads/2018/05/Books-PNG-Photo.png" alt="Books">
+          Books
+        </a>
+      </div>
+
+      <div class="category-item" data-category="books" data-name="Product 4">
+        <a href="#" class="category-link">
+          <img src="https://static.vecteezy.com/system/resources/previews/008/521/603/original/alphabet-toys-illustration-3d-free-png.png" alt="Toys">
+          Toys
+        </a>
+      </div>
+
+      <div class="category-item" data-category="books" data-name="Product 5">
+        <a href="#" class="category-link">
+          <img src="https://static.vecteezy.com/system/resources/previews/016/408/183/original/3d-sweet-lollipop-free-png.png" alt="Candies">
+          Candies
+        </a>
+      </div>
+
+      <div class="category-item" data-category="books" data-name="Product 6">
+        <a href="#" class="category-link">
+          <img src="https://png.pngtree.com/png-clipart/20220829/ourmid/pngtree-indoor-plant-png-image_6129530.png" alt="House Plants">
+          House plants
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- categories section -->
+
+
+<!-- 
+      Custom section - Реализуйте блок на ваш выбор и фантазию, 
+обязательно должна быть javascript логика -->
+
+
+      <section id="custom-section">
+        <div class="custom-block">
+          <h2>Custom Section</h2>
+          <p>Click to change the background color!</p>
+        </div>
+      </section>
+
+<!-- 
+      Custom section - Реализуйте блок на ваш выбор и фантазию, 
+обязательно должна быть javascript логика -->
+
+   
+
+
+<!-- /* 
+Favorite section - У вас будет слева 10 товаров, при нажатии
+на один из товаров, выбранный товар отрисуется справа */ -->
+
+<section id="favorite">
+  <div class="container">
+    <section class="favorite-section">
+      <div class="product-list">
+        <div class="product" onclick="showProduct(1)">
+          <span>Товар 1</span>
+          <img src="./img/product1.jpg" alt="Товар 1">
+        </div>
+        <div class="product" onclick="showProduct(2)">
+          <span>Товар 2</span>
+          <img src="./img/product2.jpg" alt="Товар 2">
+        </div>
+        <div class="product" onclick="showProduct(3)">
+          <span>Товар 3</span>
+          <img src="./img/product3.jpg" alt="Товар 3">
+        </div>
+      </div>
+      <div class="selected-product">
+        <h3>Выбранный товар:</h3>
+        <div id="selectedProduct"></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+<script>
+  function showProduct(productNumber) {
+    const selectedProduct = document.getElementById('selectedProduct');
+    selectedProduct.innerHTML = '';
+
+    const productImage = new Image();
+    productImage.onload = function() {
+      selectedProduct.appendChild(productImage);
+    };
+
+    // Измените путь и имя файла изображения товара в соответствии с вашими изображениями
+    productImage.src = `img/product${productNumber}.jpg`;
+    productImage.alt = `Товар ${productNumber}`;
+  }
+</script>
+
+      <!-- <section class="favorite-section">
+        <div class="product-list">
+          <div class="product" onclick="showProduct(1)">Товар 1</div>
+          <div class="product" onclick="showProduct(2)">Товар 2</div>
+          <div class="product" onclick="showProduct(3)">Товар 3</div>
+           
+        <!-- </div>
+        <div class="selected-product">
+          <h3>Выбранный товар:</h3>
+          <div id="selectedProduct"></div>
+        </div>
+      </section> --> 
+
+      <!-- <section class="favorite-section">
+        <div class="product-list">
+          <div class="product" onclick="showProduct(1)">
+            <span>Товар 1</span>
+            <img src="https://tyoemcosmetic.b-cdn.net/wp-content/uploads/%E7%94%B7%E5%A3%AB%E6%8A%A4%E7%90%86-1banner.png" alt="Товар 1">
+          </div>
+          <div class="product" onclick="showProduct(2)">
+            <span>Товар 2</span>
+            <img src="https://www.tcl.com/usca/content/dam/tcl/products/mobile/10Pro-720x480.png" alt="Товар 2">
+          </div>
+          <div class="product" onclick="showProduct(3)">
+            <span>Товар 3</span>
+            <img src="./img/1568788430-1206740205d81cfce2b4423-60645169.png" alt="Товар 3">
+          </div>
+        </div>
+        <div class="selected-product">
+          <h3>Выбранный товар:</h3>
+          <div id="selectedProduct"></div>
+        </div>
+      </section> -->
+
+
+<!-- /* 
+Favorite section - У вас будет слева 10 товаров, при нажатии
+на один из товаров, выбранный товар отрисуется справа */ -->
+
+
+<section id="swiper-section">
+  <div class="container">
+      <h2>Slideshow</h2>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./img/online-shopping1.avif" alt="Slide 1">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./img/online-shopping2.png" alt="Slide 2">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./img/online-shopping3.webp" alt="Slide 3">
+              </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- contact section -->
+<!-- <section class="contacts-section">
+  <div id="map">
+    <script type="text/javascript" charset="utf-8" async
+src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfdfa60acc4d3ffbc2d8d772d63fd99fe7f9092373c61b270ee7ae0f077d3039&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  <div class="contact-details">
+    <h2>Контакты</h2>
+    <ul>
+      <li>
+        <a href="tel:+996557110082">
+          <img src="./img/Phone_icon.png" alt="Phone Icon">
+          <span>+996 557 11 00 82</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/1987654321">
+          <img src="./img/WhatsApp_icon.png" alt="WhatsApp Icon">
+          <span>+996 557 11 00 82</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://web.telegram.org/k/">
+          <img src="./img/telegram-logo-transparent-free-png.webp" alt="Telegram Icon">
+          <span>Telegram</span>
+        </a>
+      </li>
+      <li>
+        <img src="./img/2838912.png" alt="Location Icon">
+        <span>Ваш адрес, город, страна</span>
+      </li>
+    </ul>
+  </div>
+</section> -->
+
+<section class="contacts-section">
+  <div class="contact-details">
+    <h2>Контакты</h2>
+    <ul>
+      <li>
+        <a href="tel:+996557110082">
+          <img src="./img/Phone_icon.png" alt="Phone Icon">
+          <span>+996 557 11 00 82</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/1987654321">
+          <img src="./img/WhatsApp_icon.png" alt="WhatsApp Icon">
+          <span>+996 557 11 00 82</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://web.telegram.org/k/">
+          <img src="./img/telegram-logo-transparent-free-png.webp" alt="Telegram Icon">
+          <span>Telegram</span>
+        </a>
+      </li>
+      <li>
+        <img src="./img/2838912.png" alt="Location Icon">
+        <span>Ваш адрес, город, страна</span>
+      </li>
+    </ul>
+  </div>
+  <div id="map">
+    <script type="text/javascript" charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfdfa60acc4d3ffbc2d8d772d63fd99fe7f9092373c61b270ee7ae0f077d3039&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</section>
+
+
+<!-- contact section -->
+
+
+
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <h4>Bektur Taalaibekov</h4>
+      </div>
+      <div class="footer__icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+    <script src="./js/script.js"></script>
+</body>
+</html>
